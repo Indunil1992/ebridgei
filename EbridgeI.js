@@ -2,5 +2,5 @@
 exports.handler = async (event) => {
   
 
-    return { "message": "Successfully executed" };
+    return { "message": "Successfully RV executed" };
 };
