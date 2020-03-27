@@ -1,0 +1,110 @@
+{
+  "EDITOR_STATE": {
+    "allProjectFiles": {
+      "6d72200f-54ed-432c-a071-6bd5471aca0e": {
+        "id": "6d72200f-54ed-432c-a071-6bd5471aca0e",
+        "parent": null,
+        "name": "EbridgeI.js",
+        "type": "JS_LAMBDA",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "EbridgeI.js",
+        "cursor": {
+          "lineNumber": 1,
+          "column": 1
+        },
+        "config": {
+          "runtime": "nodejs10.x",
+          "handler": "handler",
+          "timeout": 60,
+          "memory": 128,
+          "layers": []
+        },
+        "triggers": [
+          {
+            "resourceName": "cwecustomRule",
+            "config": {}
+          }
+        ],
+        "testCases": {
+          "85c5b534-43ae-40f7-985c-6c1094b0d008": {
+            "id": "85c5b534-43ae-40f7-985c-6c1094b0d008",
+            "name": "Test event",
+            "functionId": "6d72200f-54ed-432c-a071-6bd5471aca0e",
+            "event": "{\"key1\": \"value1\", \"key2\": \"value2\", \"key3\": \"value3\"}",
+            "eventTemplate": "hello-world"
+          }
+        }
+      }
+    },
+    "openFiles": [
+      "6d72200f-54ed-432c-a071-6bd5471aca0e"
+    ],
+    "currentFileId": "6d72200f-54ed-432c-a071-6bd5471aca0e",
+    "resources": {
+      "cwecustomRule": {
+        "name": "cwecustomRule",
+        "type": "CLOUD_WATCH",
+        "config": {
+          "mode": 1,
+          "arn": "arn:aws:events:us-east-1:318300609668:rule/my-event-bus-udith/custom-rule",
+          "name": "custom-rule",
+          "eventBusName": "my-event-bus-udith"
+        }
+      },
+      "cweonemin": {
+        "name": "cweonemin",
+        "type": "CLOUD_WATCH",
+        "config": {
+          "mode": 1,
+          "arn": "arn:aws:events:us-east-1:318300609668:rule/onemin",
+          "name": "onemin",
+          "eventBusName": "default"
+        }
+      }
+    },
+    "customTemplate": {
+      "dialect": null,
+      "definitions": null
+    },
+    "envVariables": [
+      {
+        "lambdaId": "all",
+        "varKey": "SIGMA_AWS_ACC_ID",
+        "varValue": null,
+        "shouldPersist": false,
+        "displayOnly": false,
+        "editable": false
+      }
+    ],
+    "packageJSON": {
+      "dependencies": {
+        "aws-sdk": {
+          "name": "aws-sdk",
+          "language": "nodejs",
+          "version": "2.644.0",
+          "dev": true,
+          "notRemovable": false
+        }
+      }
+    }
+  },
+  "PROJECT_META": {
+    "projectName": "EbridgeI",
+    "projectDescription": "",
+    "projectVersion": "1.0.0",
+    "projectRegion": "us-east-1",
+    "platform": "AWS",
+    "language": "nodejs",
+    "platformRegions": {},
+    "lastSave": 1585297830922
+  },
+  "VCS_STATE": {
+    "provider": "GitHub",
+    "repo": {
+      "name": "ebridgei",
+      "url": "https://github.com/Indunil1992/ebridgei"
+    }
+  }
+}
